@@ -1,0 +1,39 @@
+:root {
+  --bg-color: #e4fbff;
+  --primary-color: #b8b5ff;
+  --secondary-color: #7868e6;
+  --white: #edeef7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.polaroid {
+  background: linear-gradient(225deg, var(--primary-color), var(--secondary-color));
+  padding: 15px 15px 40px;
+  color: var(--white);
+}
+
+.photo {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+}
